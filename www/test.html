@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.11.2/brython.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.11.2/brython_stdlib.min.js"></script>
+</head>
+<body onload="brython()">
+    
+    <script type="text/python">
+        from browser import document, alert
+    
+        def handleSubmit():
+            input_field = document['inputText']
+            response = input_field.value.strip()
+            print("Texte entré :", response)
+            output_div = document['output']
+            output_div.innerHTML = "Le texte entré est : " + response
+            return 
+        document["button_alert"].bind("click", handleSubmit)
+            
+    </script>
+    <label for="inputText">Entrez un texte :</label>
+    <input type="text" id="inputText" name="inputText" required>
+    
+    <div id="output"></div>
+
+
+
+</body>
+</html>

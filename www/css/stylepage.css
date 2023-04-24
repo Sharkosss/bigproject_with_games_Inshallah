@@ -1,0 +1,136 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+ul#dropdown2 {
+  background-color:  #212121 !important;
+  
+}
+
+ul#dropdown2 a {
+  color: white !important;
+}
+
+ul#dropdown1 {
+  background-color:  #212121 !important;
+  
+}
+
+ul#dropdown1 a {
+  color: white !important;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+#contact {
+  position: fixed ;
+  right: 25px;
+  font-size: 16px;
+}
+
+
+
+
+section {
+  width: 80%;
+  margin: 80px auto 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+input[type=text], input[type=email], textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: #333;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+}
+
+input[type=submit]:hover {
+  background-color: #444;
+}
+
+input[type=text], input[type=email], textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px; /* set a maximum width for the fields */
+  font-size: 16px; /* reduce the font size */
+}
+
+.btn-envoyer {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-envoyer:hover {
+  background-color: #444;
+}
+
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: green;
+  margin-bottom: 10px;
+  
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  
+}

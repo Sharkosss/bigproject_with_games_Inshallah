@@ -1,0 +1,79 @@
+
+  
+
+body {
+    background-image: url("../img/cv/background/bg_cv.jpg");
+    max-height: 100%;
+    min-height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-size: 100% auto;
+    background-attachment: fixed;
+} 
+
+
+
+    
+#contact {
+    position: fixed ;
+    right: 25px;
+    font-size: 16px;
+  }
+
+.cv-image {
+    margin-top: 100px !important;
+    }
+
+.dropdown-color {
+    background-color:  #212121 !important;
+    }
+
+.dropdown-content a {
+    color: white !important;
+    }
+
+ 
+.dropdown-color2 {
+    background-color: #212121 !important;
+    }
+
+
+
+.buttons-container {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    }
+    
+.zoom-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    }
+    
+#btn-download {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    
+    transform: translateX(-50%);
+    z-index: 999;
+    }
+      
+
+footer {
+  
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}

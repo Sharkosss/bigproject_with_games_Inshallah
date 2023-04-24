@@ -1,0 +1,125 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+#contact {
+  position: fixed ;
+  right: 25px;
+  font-size: 16px;
+}
+
+
+/* .dropdown-color {
+  background-color: black !important;
+  }
+  
+.dropdown-content a {
+  color: white !important;
+  } */
+
+h1 {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 700;
+  
+}
+
+
+.parallax-container {
+  width: 100% !important;
+}
+
+#grisey{
+  width: 70%; 
+  margin-left:28% ;  
+}
+
+
+.socialmediatitle {
+  text-align: center; 
+  font-size:24px
+}
+
+.socialmediapictures{
+  text-align: center;
+}
+
+#pictures{
+  width: 20% !important;
+  position: relative !important;
+  transition: transform 0.2s;
+}
+
+#color{
+  color: rgb(0, 0, 0) !important;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative
+}
+
+footer {
+  
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+ul#dropdown1 {
+  background-color:  #212121 !important;
+  
+}
+
+ul#dropdown1 a {
+  color: white !important;
+}
+
+ul#dropdown2 {
+  background-color:  #212121 !important;
+  
+}
+
+ul#dropdown2 a {
+  color: white !important;
+}
+
+ul#dropdown3 {
+  background-color:  #ffffff !important;
+  
+}
+
+ul#dropdown3 a {
+  color: rgb(0, 0, 0) !important;
+}
+
+
+ul#dropdown4 {
+  background-color:  #ffffff !important;
+  
+}
+
+ul#dropdown4 a {
+  color: rgb(0, 0, 0) !important;
+}
+
+p.grey-text.text-darken-3.lighten-3 {
+  font-family: Montserrat;
+  position: relative;
+  bottom: 14px;
+  
+}
+
+#retrouve {
+  font-family: Montserrat;
+  font-weight: 500;
+}

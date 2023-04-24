@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jeu de devinette de nombre</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.2/www/src/brython.js"></script>
+  </head>
+  <body onload="brython()">
+    <h1>Jeu de devinette de nombre</h1>
+    <p>Devinez le nombre entre 1 et 100</p>
+    <input type="text" id="input_nombre" />
+    <button onclick="deviner()">Devinez</button>
+    <p id="resultat"></p>
+
+    <script type="text/python">
+      from browser import document, window
+      import random
+
+      nombre_secret = random.randint(1, 100)
+      nombre_essais = 0
+
+      def deviner():
+          global nombre_essais
+          nombre_essais += 1
+          input_nombre = document["input_nombre"].value
+          if not input_nombre.isdigit():
+              document["resultat"].text = "Entrez un nombre valide"
+          else:
+              input_nombre = int(input_nombre)
+              if input_nombre == nombre_secret:
+                  document["resultat"].text = f"Félicitations, vous avez trouvé le nombre en {nombre_essais} essais !"
+              elif input_nombre < nombre_secret:
+                  document["resultat"].text = "Le nombre est plus grand"
+              else:
+                  document["resultat"].text = "Le nombre est plus petit"
+    </script>
+  </body>
+</html>
