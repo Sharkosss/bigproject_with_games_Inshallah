@@ -1,4 +1,4 @@
-from browser import random
+import random
 
 def deal_card():
     """Retourne une carte aléatoire"""
